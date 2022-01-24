@@ -191,7 +191,7 @@ class JsonFile extends VisualisationSourceBase implements ContainerFactoryPlugin
     }
 
     foreach ($this->getFields() as $field_key => $field_label) {
-      foreach ($json->data() as $record_id => $record) {
+      foreach ($json->getData() as $record_id => $record) {
         if (!isset($records[$record_id])) {
           $records[$record_id] = new \stdClass();
         }
