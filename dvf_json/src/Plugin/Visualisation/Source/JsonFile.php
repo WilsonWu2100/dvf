@@ -196,7 +196,6 @@ class JsonFile extends VisualisationSourceBase implements ContainerFactoryPlugin
       } else {
         $data = $json->data();
       }
-
       foreach ($data as $record_id => $record) {
         if (!isset($records[$record_id])) {
           $records[$record_id] = new \stdClass();
