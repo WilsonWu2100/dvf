@@ -193,7 +193,8 @@ class JsonFile extends VisualisationSourceBase implements ContainerFactoryPlugin
     foreach ($this->getFields() as $field_key => $field_label) {
       if (method_exists($json, "getData")) {
         $data = $json->getData();
-      } else {
+      }
+      else {
         $data = $json->data();
       }
       foreach ($data as $record_id => $record) {
